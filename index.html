@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fresh html, js and css</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      /* in-page css */
+
+    </style>
+    <!-- before.js run before page load -->
+    <script src="js/before.js"></script>
+    <script>
+      /* run before page load */
+      console.log('‾in-page run before page load');
+
+    </script>
+    <script>
+      window.onload = function() {
+        /* run after page load */
+        console.log('‾in-page run after page load');
+
+      };
+    </script>
+  </head>
+  <body>
+    <p id="test">Test paragraph 1.</p>
+    <p>Test paragraph 2.</p>
+
+
+    <!-- after.js run after page load -->
+    <script src="js/after.js"></script>
+  </body>
+</html>
